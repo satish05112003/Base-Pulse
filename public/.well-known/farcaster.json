@@ -1,33 +1,33 @@
 {
-  "accountAssociation": {
-    "header": "eyJmaWQiOjEwODQzNTUsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyOWYxYTNDZDU3QzA5MzllNGUxZkY4QWRFNjZmMWFlODY4OEYzQTQwIn0",
-    "payload": "eyJkb21haW4iOiJiYXNlLXJlcHV0YXRpb24udmVyY2VsLmFwcCJ9",
-    "signature": "4mE2l4vAGEPCd+t9T6PEGc+WPkXl4Gog34H1HO46yF4uGfQ06zDof/iEnqsbsSlcugY0aYHf4NcW7O1jo/ywiRs="
-  },
-  "miniapp": {
-    "version": "1",
-    "name": "Base Pulse",
-    "subtitle": "Base reputation",
-    "description": "check your reputation score",
-    "homeUrl": "https://base-reputation.vercel.app",
-    "iconUrl": "https://base-reputation.vercel.app/icon.png",
-    "splashImageUrl": "https://base-reputation.vercel.app/splash.png",
-    "splashBackgroundColor": "#1a1a1a",
-    "screenshotUrls": [
-      "https://base-reputation.vercel.app/screenshot1.png",
-      "https://base-reputation.vercel.app/screenshot2.png"
-    ],
-    "primaryCategory": "utility",
-    "tags": [
-      "reputation calculator",
-      "reputation",
-      "score"
-    ],
-    "tagline": "check Instantly",
-    "heroImageUrl": "https://base-reputation.vercel.app/hero.png",
-    "ogTitle": "base reputation",
-    "ogDescription": "base reputation",
-    "ogImageUrl": "https://base-reputation.vercel.app/og-image.png",
-    "noindex": false
-  }
+    "accountAssociation": {
+        "header": "eyJmaWQiOjEwODQzNTUsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyOWYxYTNDZDU3QzA5MzllNGUxZkY4QWRFNjZmMWFlODY4OEYzQTQwIn0",
+        "payload": "eyJkb21haW4iOiJiYXNlLXJlcHV0YXRpb24udmVyY2VsLmFwcCJ9",
+        "signature": "4mE2l4vAGEPCd+t9T6PEGc+WPkXl4Gog34H1HO46yF4uGfQ06zDof/iEnqsbsSlcugY0aYHf4NcW7O1jo/ywiRs="
+    },
+    "miniapp": {
+        "version": "1",
+        "name": "Base Pulse",
+        "subtitle": "Base reputation",
+        "description": "check your reputation score",
+        "homeUrl": "https://base-reputation.vercel.app",
+        "iconUrl": "https://base-reputation.vercel.app/icon.png",
+        "splashImageUrl": "https://base-reputation.vercel.app/splash.png",
+        "splashBackgroundColor": "#1a1a1a",
+        "screenshotUrls": [
+            "https://base-reputation.vercel.app/screenshot1.png",
+            "https://base-reputation.vercel.app/screenshot2.png"
+        ],
+        "primaryCategory": "utility",
+        "tags": [
+            "calculator",
+            "reputation",
+            "score"
+        ],
+        "tagline": "check Instantly",
+        "heroImageUrl": "https://base-reputation.vercel.app/hero.png",
+        "ogTitle": "base reputation",
+        "ogDescription": "base reputation",
+        "ogImageUrl": "https://base-reputation.vercel.app/og-image.png",
+        "noindex": false
+    }
 }
