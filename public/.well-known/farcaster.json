@@ -5,7 +5,7 @@
     "signature": "4mE2l4vAGEPCd+t9T6PEGc+WPkXl4Gog34H1HO46yF4uGfQ06zDof/iEnqsbsSlcugY0aYHf4NcW7O1jo/ywiRs="
   },
   "miniapp": {
-    "version": "1.0",
+    "version": "1",
     "name": "Base Pulse",
     "subtitle": "Base reputation",
     "description": "check your reputation score",
