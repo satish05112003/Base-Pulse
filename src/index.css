@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Crypto Design System - Base Wallet Reputation Score */
+
+@layer base {
+  :root {
+    --background: 240 20% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 15% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 15% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 20% 6%;
+
+    --secondary: 270 100% 65%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 270 100% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for reputation system */
+    --neon-cyan: 180 100% 50%;
+    --neon-purple: 270 100% 65%;
+    --neon-green: 145 100% 50%;
+    --neon-orange: 30 100% 55%;
+    --neon-red: 0 100% 55%;
+    
+    /* Score colors */
+    --score-danger: 0 100% 55%;
+    --score-caution: 30 100% 55%;
+    --score-good: 145 100% 50%;
+    --score-excellent: 145 100% 40%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(270 100% 65%));
+    --gradient-glow: radial-gradient(circle, hsl(180 100% 50% / 0.3), transparent 70%);
+    
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.5);
+    --shadow-neon-purple: 0 0 20px hsl(270 100% 65% / 0.5);
+
+    --sidebar-background: 240 15% 8%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 20% 6%;
+    --sidebar-accent: 240 10% 15%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 10% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+
+  .dark {
+    --background: 240 20% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 15% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 15% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 20% 6%;
+
+    --secondary: 270 100% 65%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 270 100% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 180 100% 50%;
+    
+    --sidebar-background: 240 15% 8%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 20% 6%;
+    --sidebar-accent: 240 10% 15%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 10% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: 
+      radial-gradient(ellipse at top, hsl(270 100% 65% / 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom, hsl(180 100% 50% / 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(180 100% 50% / 0.5), 0 0 40px hsl(180 100% 50% / 0.3);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(270 100% 65% / 0.5), 0 0 40px hsl(270 100% 65% / 0.3);
+  }
+  
+  .glow-green {
+    box-shadow: 0 0 20px hsl(145 100% 50% / 0.5), 0 0 40px hsl(145 100% 50% / 0.3);
+  }
+  
+  .glow-orange {
+    box-shadow: 0 0 20px hsl(30 100% 55% / 0.5), 0 0 40px hsl(30 100% 55% / 0.3);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 20px hsl(0 100% 55% / 0.5), 0 0 40px hsl(0 100% 55% / 0.3);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(180 100% 50%), hsl(270 100% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass {
+    background: hsl(240 15% 10% / 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(240 10% 25% / 0.5);
+  }
+  
+  .noise {
+    position: relative;
+  }
+  
+  .noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes score-fill {
+    from {
+      stroke-dashoffset: 440;
+    }
+  }
+  
+  .animate-score-fill {
+    animation: score-fill 1.5s ease-out forwards;
+  }
+}
