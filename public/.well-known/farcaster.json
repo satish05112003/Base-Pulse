@@ -1,8 +1,8 @@
 {
     "accountAssociation": {
-        "header": "",
-        "payload": "",
-        "signature": ""
+        "header": "eyJmaWQiOjEwODQzNTUsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyOWYxYTNDZDU3QzA5MzllNGUxZkY4QWRFNjZmMWFlODY4OEYzQTQwIn0",
+        "payload": "eyJkb21haW4iOiJiYXNlLXJlcHV0YXRpb24udmVyY2VsLmFwcCJ9",
+        "signature": "4mE2l4vAGEPCd+t9T6PEGc+WPkXl4Gog34H1HO46yF4uGfQ06zDof/iEnqsbsSlcugY0aYHf4NcW7O1jo/ywiRs="
     },
     "miniapp": {
         "version": "1",
@@ -20,12 +20,12 @@
         "primaryCategory": "utility",
         "tags": [
             "reputation calculator",
-            "math",
-            "utility"
+            "reputation",
+            "score"
         ],
         "tagline": "check Instantly",
         "heroImageUrl": "https://base-reputation.vercel.app/hero.png",
-        "ogTitle": "bas reputation",
+        "ogTitle": "base reputation",
         "ogDescription": "base reputation",
         "ogImageUrl": "https://base-reputation.vercel.app/og-image.png",
         "noindex": false
